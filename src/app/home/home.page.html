@@ -1,20 +1,90 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
+<ion-content *ngIf="!viewPc">
+<div style="padding:0 5%">
+  <div >
+    <h1 style="font-size: 25pt; font-weight: bold;">Votre Shynlei</h1>
+    <p style="line-height: 33px; margin: 0 0 13px">7etapes, 2 fiches pour prendre notre des rencontres, 1 page pour eclairer le sens, 3 interpretations pour vous aider..</p>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
   </div>
+
+  <app-block *ngFor="let item of data" [icon]="item.icon" [text]="item.text"></app-block>
+  <ion-row >
+    <ion-col style="text-align: center; margin: 15px 0;">
+      <ion-button >Exprimer mes reves</ion-button>
+    </ion-col>
+  </ion-row>
+</div>
 </ion-content>
+
+<ion-content *ngIf="viewPc" style="--background: url(../../assets/images/pc_ui.png) 0 0/100% 100% no-repeat;;">
+  <div >
+    <div >
+      <ion-row >
+        <ion-col size="3" style="display: flex;justify-content: center;">
+          <ion-img src="../../assets/images/Image_2.png" style="width: 150px;"></ion-img>
+        </ion-col>
+
+        <ion-col size="6">
+
+        </ion-col>
+
+        <ion-col size="3" style="display: flex; justify-content: center; align-items: center;">
+          <ion-icon name="menu-outline" size="large" color="light"></ion-icon>
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col style="display: flex; justify-content: center;">
+          <div style="display: flex; flex-direction: column; width: 54%;">
+            <h1 style="font-weight: bold;font-size: 24px;">Pour commencer...</h1>
+            <p style="line-height: 20px;font-size: 10.5pt;">Faire votre Shynlei, jouer avec, c'est l'occasion d'ecouter vos reves, de les partager et de prendre confiance dans votre richesse.</p>
+        
+          </div>
+          
+        </ion-col>
+        <!-- <ion-col size="2"></ion-col> -->
+        <ion-col>
+          <div style="width: 91%; display: flex; justify-content: center;">
+            <div style="color: #292929; width: 70%; display: flex; flex-direction: column;">
+              <h1 style="font-weight: bold;font-size: 24px;">Votre Shynlei</h1>
+              <p style="line-height: 20px;font-size: 10.5pt;">7etapes, 2 fiches pour prendre notre des rencontres, 1 page pour eclairer le sens, 3 interpretations pour vous aider..</p>
+            </div>
+          </div>
+        </ion-col>
+      </ion-row>
+       <ion-row >
+            <ion-col style="display: flex; justify-content: center; align-items: center;">
+              <div style="display: flex; flex-direction: column;">
+                <div >
+                  <ion-label style="font-size:15pt">Nom et prénom :</ion-label>
+                  <ion-input type="text" style="border-bottom: 3px solid white; width: 27vw;"></ion-input>
+                </div> 
+                <div style="margin: 45px 0;">
+                  <ion-label style="font-size:15pt">Nom et prénom :</ion-label><br/>
+                  <div style="font-size: 9pt;margin-top: 15px;">L'intention, l'objectif de ce Shynlei</div>
+                  <ion-input type="text" style="border-bottom: 3px solid white; width: 27vw;"></ion-input>
+                </div> 
+              </div>
+            </ion-col>
+        <!-- <ion-col size="1"></ion-col> -->
+
+            <ion-col style="display: flex; justify-content: center; flex-wrap: wrap;">
+             
+                <div style="display: flex; flex-wrap: wrap;width: 74%;">
+                  <app-block style="color: #292929; width: 50%; font-size: 9pt; font-weight: 600;" *ngFor="let item of data" [icon]="item.icon" [text]="item.text"></app-block>
+                </div>            
+                <ion-row>
+                  <ion-col style="text-align: center;">
+                    <ion-button size="medium" style="font-size: 9pt;  --background: #6db0b6;
+                    --background-hover: #7eb9be;
+                    --background-activated: #589fa6;
+                    --background-focused: #589fa6;">Exprimer mes reves<ion-icon slot="end" name="chevron-forward-outline"></ion-icon></ion-button>
+                  </ion-col>
+                </ion-row>
+              
+            </ion-col>
+          </ion-row>
+    </div>
+  </div>
+  </ion-content>
+
+
