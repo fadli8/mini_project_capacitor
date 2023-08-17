@@ -5,4 +5,4 @@
 2. install npm : npm install
 3. after installing ionic and capacitor run the project with : ionic serve
 
-![Screenshot of a comment on a GitHub issue showing an image, added in the Markdown, of an Octocat smiling and raising a tentacle.]([https://myoctocat.com/assets/images/base-octocat.svg](https://drive.google.com/file/d/1WOvIGlh0dffve7RwbC-6u7nLK8yh-RqO/view?usp=sharing)https://drive.google.com/file/d/1WOvIGlh0dffve7RwbC-6u7nLK8yh-RqO/view?usp=sharing)
+![Screenshot of a comment on a GitHub issue showing an image, added in the Markdown, of an Octocat smiling and raising a tentacle.](https://myoctocat.com/assets/images/base-octocat.svg](https://drive.google.com/file/d/1WOvIGlh0dffve7RwbC-6u7nLK8yh-RqO/view?usp=sharing)https://drive.google.com/file/d/1WOvIGlh0dffve7RwbC-6u7nLK8yh-RqO/view?usp=sharing)
