@@ -4,8 +4,11 @@ import { IonicModule } from '@ionic/angular';
 import { FormsModule } from '@angular/forms';
 import { HomePage } from './home.page';
 
+
 import { HomePageRoutingModule } from './home-routing.module';
 import { BlockComponent } from '../block/block.component';
+import { DreamService } from '../services/dream.service';
+
 
 
 @NgModule({
@@ -13,8 +16,10 @@ import { BlockComponent } from '../block/block.component';
     CommonModule,
     FormsModule,
     IonicModule,
-    HomePageRoutingModule
+    HomePageRoutingModule,
+
   ],
-  declarations: [HomePage, BlockComponent]
+  declarations: [HomePage, BlockComponent],
+  providers:[DreamService]
 })
 export class HomePageModule {}

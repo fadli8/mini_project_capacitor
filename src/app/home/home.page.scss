@@ -1,0 +1,25 @@
+.title{
+    font-weight: bold; 
+    font-size: 24px;
+}
+
+.btn-ay {
+    font-size: 9pt; 
+    --background: #6db0b6;
+    --background-hover: #7eb9be;
+    --background-activated: #589fa6;
+    --background-focused: #589fa6;
+}
+.background-aym {
+    --background: url(../../assets/images/pc_ui.png) 0 0/100% 100% no-repeat;
+}
+
+.center-aym {
+    display: flex; 
+    justify-content: center;
+}
+
+.input-aym{
+    border-bottom: 3px solid white;
+    width: 27vw;
+}
