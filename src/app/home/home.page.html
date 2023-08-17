@@ -14,6 +14,8 @@
     </ion-col>
   </ion-row>
 </div>
+<ion-toast trigger="open-toast" [color]="color" [message]="message" [duration]="5000" (didDismiss)="setOpen(false, '', '')"></ion-toast>
+
 </ion-content>
 
 <ion-content *ngIf="viewPc" class="background-aym">
@@ -46,8 +48,8 @@
         <ion-col>
           <div class="center-aym" style="width: 91%;">
             <div style="color: #292929; width: 70%; display: flex; flex-direction: column;">
-              <h1 class="title">Votre Shynlei</h1>
-              <p style="line-height: 20px;font-size: 10.5pt;">7etapes, 2 fiches pour prendre notre des rencontres, 1 page pour eclairer le sens, 3 interpretations pour vous aider..</p>
+              <h1 class="title">Votre Shynlei C'est..</h1>
+              <p style="line-height: 20px;font-size: 10.5pt;">7 etapes, 2 fiches pour prendre notre des rencontres, 1 page pour eclairer le sens, 3 interpretations pour vous aider..</p>
             </div>
           </div>
         </ion-col>
